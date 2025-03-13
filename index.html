@@ -9,6 +9,9 @@
     <title>Oliver Brixvig's CV</title>
 </head>
 <body>
+    <button id="dark-mode-toggle" class="btn btn-secondary">Skift tema</button>
+    <button id="sidebar-toggle" class="btn btn-primary">☰ Menu</button>
+    <!-- Sidebar med kontaktoplysninger -->
     <div class="sidebar">
         <img src="ProfilePic/ProfilePic.jpg" alt="Billede af Oliver Brixvig" class="cv-image">
         <h2>Oliver Brixvig</h2>
@@ -17,11 +20,12 @@
         <ul class="list-unstyled">
             <li>Email: oliver@brixvig.dk</li>
             <li>Telefon: +45 12345678</li>
-            <li>LinkedIn: <a href="https://linkedin.com/in/oliver-brixvig">linkedIN</a></li>
-            <li>GitHub: <a href="https://github.com/obrixvig">github.com/obrixvig</a></li>
+            <li>LinkedIn: <a href="https://linkedin.com/in/oliverbrixvig">linkedin.com/in/oliverbrixvig</a></li>
+            <li>GitHub: <a href="https://github.com/oliverbrixvig">github.com/oliverbrixvig</a></li>
         </ul>
     </div>
 
+    <!-- Hovedindhold -->
     <div class="main-content">
         <div class="container">
             <section id="work-experience" class="card mb-4">
@@ -51,7 +55,7 @@
                     <h2 class="card-title">Uddannelse</h2>
                     <ul>
                         <li>
-                            <strong>Datamatiker</strong> - Zealand Erhvervsakademi Sjælland (2024 - stadig aktiv)
+                            <strong>Datamatiker</strong> - Zealand Erhvervsakademi Sjælland (2021 - 2024)
                             <ul>
                                 <li>Fokus på programmering, webudvikling og databaser.</li>
                             </ul>
@@ -70,10 +74,10 @@
                 <div class="card-body">
                     <h2 class="card-title">Projekter</h2>
                     <div class="row">
-                        <div class="col-md-6"><a href="https://brixvig.dk">Brixvig.dk</a></div>
-                        <div class="col-md-6">Coffee Crazy</div>
-                        <div class="col-md-6">Det vilde system</div>
-                        <div class="col-md-6">Det er ok at prøve</div>
+                        <div class="col-md-6"><a href="#" class="project-link" data-project="1">Brixvig.dk</a></div>
+                        <div class="col-md-6"><a href="#" class="project-link" data-project="2">Coffee Crazy</a></div>
+                        <div class="col-md-6"><a href="#" class="project-link" data-project="3">Det vilde system</a></div>
+                        <div class="col-md-6"><a href="#" class="project-link" data-project="4">Det er ok at prøve</a></div>
                     </div>
                 </div>
             </section>
@@ -107,6 +111,15 @@
             </section>
         </div>
     </div>
+
+    <!-- Projektmodal -->
+    <div id="project-modal" style="display: none;">
+        <div id="modal-content"></div>
+        <button id="close-modal" class="btn btn-secondary">Luk</button>
+    </div>
+
+    <!-- JavaScript-fil inkluderet -->
+    <script src="JavaScripts.js"></script>
 </body>
 </html>
  

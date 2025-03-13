@@ -2,6 +2,24 @@
 /* H1 tags */
 body {
     background-color: #f0f0f0; /* Lys grå baggrund */
+    color: #000;
+}
+
+/* Dark mode */
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode .sidebar,
+.dark-mode .card,
+.dark-mode #project-modal {
+    background-color: #444;
+    color: #fff;
+}
+
+.dark-mode h2.card-title {
+    color: #66b3ff; /* Lysere blå til dark mode */
 }
 
 /* Sidebar styling */
@@ -11,15 +29,15 @@ body {
     left: 0;
     width: 250px;
     height: 100%;
-    background-color: #ffffff; /* Hvid baggrund */
+    background-color: #ffffff;
     padding: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Let skygge til højre */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar .cv-image {
     width: 150px;
     height: 150px;
-    border-radius: 50%; /* Gør billedet rundt */
+    border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
 }
@@ -47,18 +65,44 @@ body {
     margin-bottom: 10px;
 }
 
+/* Hovedindhold styling */
 .main-content {
-    margin-left: 250px; 
+    margin-left: 250px;
 }
 
 .main-content .container {
-    padding-top: 20px; 
+    padding-top: 20px;
 }
 
 section.card {
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 h2.card-title {
-    color: #007bff; 
+    color: #007bff;
+}
+
+/* Dark mode knap placering */
+#dark-mode-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+/* Projektmodal styling */
+#project-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 2000;
+}
+
+#modal-content {
+    margin-bottom: 15px;
 }
